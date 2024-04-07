@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap')
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    outline: none;
+        font-family: "Bungee Spice", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+img {
+    width: 100px;
+}
+body {
+    background-color: orange;
+}
+section,footer {
+    padding: 54px 0;
+}
+h3 {
+    font-size: 50px;
+}
+p {
+    color: white;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.btn {
+    background-color: orangered;
+    color: white;
+    padding: 15px 20px; 
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn:hover{
+    background-color: rgba(160, 46, 4, 0.747);
+
+}
+@keyframes animate-outline {
+    from {
+        outline: 0 solid orangered;
+}
+    to{
+        outline: 15px solid orangered;
+    }
+}
+
+header {
+    background-position:center ;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+h1 {
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+nav ul {
+    display: flex; 
+    align-items: center;
+}
+nav ul a {
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+    }
+nav ul a:not(.btn)::after{
+    content: "";
+    background-color: rgb(255, 115, 0);
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+
+}
+.banner {
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text {
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .banner-text h1 {
+    font-size: 96px;
+    color: white;
+}
+.banner .banner-text p {
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+div a {
+    text-decoration: none;
+}
+
+.faca-mais .faca-mais-text {
+    width: 50%;
+    padding: 0 40px;
+    }
+
+
+    /* Mobile */
+@media (max-width: 480px) {
+    // styles
+    }
+    
+    /* Extra small devices */
+    @media (min-width: 481px) and (max-width: 767px) 
+    // styles
+    
+    * Small tablets *
+    @media (min-width: 768px) and (max-width: 991px) 
+    // styles
+    
+    
+    /* Large tablets/laptops */
+    @media (min-width: 992px) and (max-width: 1199px)
+    // styles
+    
+    
+    /* Desktops */
+    @media (min-width: 1200px) and (max-width: 1919px) 
+    
+    
+    /* Extra large screens */
+    @media (min-width: 1920px) 
+    
